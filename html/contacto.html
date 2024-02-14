@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Cristopher Díaz Hernádez 1ºASIR-B-->
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctanos</title>
+    <link rel="icon" href="../imagenes/favicon-96x96.png" 
+    type="image/png" sizes="96x96">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <div>
+        <h1>La web de las artes</h1>
+    </div>
+    <div>
+        <h2 id="inicio">SECCIÓN: Contáctanos</h2>
+        <ul>
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="cine.html">Cine</a></li>
+            <li><a href="generosLiterarios.html">Géneros Literarios</a></li>
+            <li><a href="multimedia.html">multimedia</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </div>
+    <hr/>
+    <div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" class="valida" 
+                    required pattern="[A-Za-z]+" title="Solo admite letras"
+                    placeholder="Introduce tu nombre"> 
+                    <abbr title="Obligatiorio">*</abbr>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input id="apellidos" type="text" name="apeliidos" class="valida" 
+                    required pattern="[A-Za-z]+" title="Solo admite letras"
+                    placeholder="Introduce tus apellidos">
+                    <abbr title="Obligatiorio">*</abbr>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required class="valida" 
+                    pattern=".+@.+\..+" title="Introduce email valido (exmaple@deemail.com)"
+                    placeholder="usuario@email.com">
+                    <abbr title="Obligatiorio">*</abbr>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha" id="fecha" 
+                    min="1940-12-17" max="2024-01-01">
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" nombre="edad" 
+                    min="1" max="100">
+                </div>
+                <div>
+                    Sexo:
+                    <input type="radio" id="hombre" name="sexo" value="H">
+                        <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="sexo" value="M">
+                        <label for="mujer">Mujer</label>
+                    <input type="radio" id="otro" name="sexo" value="O" checked>
+                        <label for="otro">Otro</label>
+                </div>
+                <div>
+                    <label for="pais">País:</label>
+                    <select name="pais" id="pais">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="ESP">España</option>
+                        <option value="FR">Francia</option>
+                        <option value="POR">Portugal</option>
+                        <option value="ITA">Italia</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <div>
+                    <p>
+                       <label for="mensaje">Mensaje:</label>
+                       <textarea name="mensaje" id="mensaje" cols="70" rows="10" 
+                       spellcheck="true" placeholder="Introduce tu mensaje..."></textarea> 
+                    </p>
+                </div>
+                <div>
+                    <label for="adjunto">Adjunta una foto...</label>
+                    <input type="file" name="adjunto" accept=".jpeg,.jpg,.png" multiple>
+                </div>
+            </fieldset>
+            <div>
+                <div>
+                    <input type="checkbox" id="condiciones" name="condiciones" checked>
+                    <label for="condiciones">He leído las condiciones...</label>
+                </div>
+                <div>
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <h2>Centro de referencia</h2>
+        <iframe style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.779292029599!2d-16.285825789687163!3d28.45606889197255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1707924241437!5m2!1ses!2ses" >
+        </iframe>
+    </div>
+    <hr/>
+    <div>
+        <a href="#inicio">Inicio</a>
+    </div>
+</body>
+</html>

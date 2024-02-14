@@ -1,0 +1,20 @@
+/*Cristopher Díaz Hernández 1ºASIR-B*/
+
+iframe {
+    width: 600px;
+    height: 400px;
+}
+
+:is(input.valida):invalid {
+    outline:none;
+    border: 2px solid red;
+    background-color: lightcoral;
+}
+
+:is(input.valida):valid {
+    outline:none;
+    border: 2px solid green;
+    background-color: lightgreen;
+}
+  
+
